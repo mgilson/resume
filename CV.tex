@@ -1,0 +1,461 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CV.tex
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Matthew Gilson, Ph.D}
+\newcommand{\CVTitle}{Matt's CV.}
+\newcommand{\CVNote}{CV compiled on {\today}}
+\newcommand{\CVWebpage}{https://github.com/mgilson/resume}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{https://www.google.com/maps/place/1400+Hopkins+Avenue,+Redwood+City,+California+994062,+USA}
+{1400 Hopkins Ave, Apt 303, Redwood City, CA 94062, USA}
+\par
+\href{mailto:m.gilson1@gmail.com}
+{m.gilson1@gmail.com}
+\,\SubBulletSymbol\,
+(603)\,892-7736
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\href{http://www.unh.edu/}
+{\textbf{University of New Hampshire}},
+Durham, New Hampshire, USA
+
+\Gap
+\BulletItem
+Ph.D. in
+\href{http://physics.unh.edu/content/physics-phd}
+{Physics and Space Science}
+\hfill
+\DatestampYM{2007}{08} --
+\DatestampYM{2011}{12}
+\begin{Detail}
+\SubBulletItem
+Thesis: \textit{Global Structure of the Nightside Proton Precipitation During Substorms Using Simulations and Observations}
+\SubBulletItem
+Adviser:
+Prof.~Jimmy~Raeder
+\end{Detail}
+
+\BigGap
+\Entry
+\href{http://www.gcc.edu/Pages/Grove-City-College.aspx}
+{\textbf{Grove City College}},
+Grove City, Pennsylvania, USA
+
+\Gap
+\BulletItem
+B.S. in
+\href{http://www.gcc.edu/academics/SEM/physics/Pages/default.aspx}
+{Applied Physics}
+\hfill
+\DatestampYM{2003}{08} -- \DatestampYM{2007}{05}
+
+\BigGap
+\Entry
+\href{https://www.udacity.com}
+{\textbf{Udacity}}
+
+\Gap
+\BulletItem
+Nanodegree in
+\href{https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009}
+{Machine learning} (in progress)
+\hfill
+\DatestampYM{2016}{09} -- Present
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Work EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Work Experience}
+{Work Experience}
+{PDF:ResearchExperience}
+
+\Entry
+\href {https://getpattern.com}{\textbf{Pattern Technologies Inc.}}
+\Gap
+\BulletItem
+Software Engineer
+\hfill
+\DatestampYM{2015}{07} -- Present
+\begin{Detail}
+\SubBulletItem
+Joined the founding team at an early stage startup.  Developed automated tooling
+for code testing and deployment.  Coded the product's web application and
+marketing websites along side two other engineers that served hundreds of customers daily.
+\end{Detail}
+
+\BigGap
+\Entry
+\href {https://google.com}{\textbf{Google Inc.}}
+\Gap
+\BulletItem
+Web Solutions Engineer
+\hfill
+\DatestampYM{2015}{07} -- \DatestampYM{2013}{07}
+\begin{Detail}
+\SubBulletItem
+Developed internal tools to support Google's business.
+\SubBulletItem
+Conducted code reviews for my team and others.
+\end{Detail}
+
+\BigGap
+\Entry
+\href {http://www.unh.edu/}{\textbf{University of New Hampshire}}
+\Gap
+\BulletItem
+Research Scientist
+\hfill
+\DatestampYM{2012}{01} -- \DatestampYM{2013}{07}
+\begin{Detail}
+\SubBulletItem
+Coupled the global MHD Magnetospheric simulation (OpenGGCM) with the Rice Convection
+Model of the inner magnetosphere.  This enabled more accurate simulation of the
+Earth's magnetic field and it's interactions with solar plasmas.
+\SubBulletItem
+Published peer reviewed journal articles.
+\SubBulletItem
+Mentored graduate students.
+\end{Detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & ACCOMPLISHMENTS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Awards \&\newline
+Achievements}
+{Awards \& Achievements}
+{PDF:AwardsAndAchievements}
+
+\Entry
+\textbf{StackOverflow}
+\hfill
+\DatestampY{2011} -- Present
+\begin{Detail}
+\Item
+Answered nearly 4000 questions.
+\Item
+Top \href{http://stackoverflow.com/users/748858/mgilson}{0.06\% all time.}
+\Item
+10th all time leading answerer of \href{http://stackoverflow.com/tags/python/topusers}{python questions.}
+\end{Detail}
+
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entry
+\textbf{Programming Languages}
+\begin{Detail}
+\Item Python (fluent), Javascript, C (proficient), Fortran (fluent), Bash (proficient), Java (novice)
+\end{Detail}
+
+\BigGap
+\Entry
+\textbf{Frameworks}
+\begin{Detail}
+\Item Google App Engine, AngularJS
+\end{Detail}
+
+\BigGap
+\Entry
+\textbf{Agile Developement}
+\begin{Detail}
+\Item Certified Scrum Master in \DatestampY{2015}.  Still practice agile methodologies
+at current workplace.
+\end{Detail}
+
+% %%%%%%%%%%%%%%%
+% %% INTERESTS %%
+% %%%%%%%%%%%%%%%
+
+% \Section
+% {Interests}
+% {Interests}
+% {PDF:Interests}
+
+% \Entry
+% Programming, Science (particularly Physics), High Performance Computing, Machine Learning, Rock Climbing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SELECTED PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Selected Publications}
+{Selected Publications}
+{PDF:Selected Publications}
+
+\SubSection
+{Journals}
+{Journals}
+{PDF:Journals}
+
+\BigGap
+\href{http://onlinelibrary.wiley.com/doi/10.1029/2011JA016640/abstract}
+{\underline{Gilson~M.~L.}, J.~Raeder, E.~F.~Donovan, Y.~S.~Ge and S.~B.~Mende (2011)
+``Statistics of the longitudinal splitting of proton aurora during substorms'',
+\textit{J. Geophys. Res., 116}(A8), A08,206, doi:10.1029/2011JA016640}
+
+\BigGap
+\href{http://onlinelibrary.wiley.com/doi/10.1029/2012JA017562/full}
+{\underline{Gilson,~M.~L.}, J.~Raeder, E.~Donovan, Y.~S.~Ge, and L.~Kepko (2012), ``Global simulation of proton precipitation due to field line curvature during substorms",
+\textit{J. Geophys. Res., 117}, A05216, doi:10.1029/2012JA017562.}
+
+\BigGap
+\href{http://onlinelibrary.wiley.com/doi/10.1002/2017JA024104/full}
+{Cramer~W.D., J.~Raeder, F.R.~Toffoletto, \underline{M.L~Gilson}, and B.~Hu (2017), ``Plasma Sheet Injections into the Inner Magnetosphere: Two-Way Coupled OpenGGCM-RCM Model Results'',
+\textit{J. Geophys. Res., 122}, doi:10.1002/2017JA024104.}
+
+
+
+% % Manual page break.
+% \newpage
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% THIS IS A SECTION WITH USAGE NOTES %%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% % Declare a new group to limit the scope of \color to this section.
+% \begingroup
+% \color{red}
+
+% \Section
+% {This is a\newline
+% Section\newline
+% With\newline
+% Usage Notes}
+% {This is a Section With Usage Notes (For PDF Bookmark)}
+% {PDF:ThisIsASectionWithUsageNotes:ForPDFLink}
+
+% \SubSection
+% {This is a SubSection}
+% {This is a SubSection (For PDF Bookmark)}
+% {PDF:ThisIsASubSection:ForPDFLink}
+
+% \BigGap
+% \BulletItem
+% Use \CodeCommand{Section\{a\}\{b\}\{c\}} and
+% \CodeCommand{SubSection\{a\}\{b\}\{c\}}
+% to create sections and subsections, where
+% \Code{a} is the heading displayed on the page,
+% \Code{b} is the PDF bookmark heading, and
+% \Code{c} is the internal PDF link (must be unique).
+% Sections and subsections will appear in the PDF bookmarks.
+% Note the CamelCase command names.
+
+% \Gap
+% \BulletItem
+% Use
+% \CodeCommand{Entry},
+% \CodeCommand{BulletItem},
+% \CodeCommand{SubBulletItem},
+% \CodeCommand{Item},
+% \CodeCommand{SubItem},
+% \CodeCommand{NumberedItem},
+% etc.,
+% to create entries in the main body of the CV.
+
+% \Gap
+% \BulletItem
+% Enclose entry details between
+% \CodeCommand{begin\{Detail\}} and
+% \CodeCommand{end\{Detail\}}
+% so that they are typeset in a smaller font.
+% \begin{Detail}
+% \Item
+% This is an example of entry detail text enclosed in a \Code{Detail} environment.
+% \end{Detail}
+
+% \Gap
+% \BulletItem
+% Use \CodeCommand{Gap} and \CodeCommand{BigGap} to insert vertical spaces between entries to improve layout.
+
+% \BigGap
+% \SubSection
+% {This is Another SubSection}
+% {This is Another Subsection (For PDF Bookmark)}
+% {PDF:ThisIsAnotherSubSection:ForPDFLink}
+
+% \BigGap
+% \Entry
+% This is a plain \CodeCommand{Entry},
+% followed by an \CodeCommand{hfill} and a date range
+% \hfill
+% \DatestampYM{2015}{10} --
+% \DatestampYM{2015}{12}
+
+% \Gap
+% \BulletItem
+% This is a \CodeCommand{BulletItem}.
+% \Item
+% This is an \CodeCommand{Item}, which has no bullet.
+% Note the alignment with the \CodeCommand{BulletItem} above.
+
+% \Gap
+% \SubBulletItem
+% This is a \CodeCommand{SubBulletItem}.
+% \SubItem
+% This is a \CodeCommand{SubItem}, which has no bullet.
+% Note the alignment with the \CodeCommand{SubBulletItem} above.
+
+% \Gap
+% \NumberedItem{[42]}
+% This is a \CodeCommand{NumberedItem}.
+% Change the value of the macro \CodeCommand{MaxNumberedItem} to adjust the indentation width.
+
+% \BigGap
+% \SubSection
+% {Line, Paragraph, and Page Breaks}
+% {Line, Paragraph, and Page Breaks (For PDF Bookmark)}
+% {PDF:LineParagraphAndPageBreaks:ForPDFLink}
+
+% \BigGap
+% \BulletItem
+% To create a new line within the same paragraph (i.e., preserving the same paragraph indentation), use \CodeCommand{newline} instead of \CodeCommand{\textbackslash};
+% the latter will reset the paragraph indentation.
+
+% \Gap
+% \BulletItem
+% To create a new paragraph, use \CodeCommand{par} or simply leave an empty line.
+% Paragraph indentations (from
+% \CodeCommand{Entry},
+% \CodeCommand{BulletItem},
+% \CodeCommand{SubBulletItem},
+% \CodeCommand{Item},
+% \CodeCommand{SubItem},
+% \CodeCommand{NumberedItem},
+% etc.) do not carry across different paragraphs.
+
+% \Gap
+% \BulletItem
+% To create a new page, use \CodeCommand{newpage}.
+
+% \BigGap
+% \SubSection
+% {Dates}
+% {Dates (For PDF Bookmark)}
+% {PDF:Dates:ForPDFLink}
+
+% \BigGap
+% \BulletItem
+% Use the following macros to specify and display dates consistently:
+% \SubBulletItem
+% \CodeCommand{DatestampYMD\{yyyy\}\{MM\}\{dd\}}
+% (e.g., \CodeCommand{DatestampYMD\{2008\}\{01\}\{15\}})
+% \SubBulletItem
+% \CodeCommand{DatestampYM\{yyyy\}\{MM\}}
+% (e.g., \CodeCommand{DatestampYM\{2008\}\{01\}})
+% \SubBulletItem
+% \CodeCommand{DatestampY\{yyyy\}}
+% (e.g., \CodeCommand{DatestampY\{2008\}})
+
+% \Gap
+% \BulletItem
+% Change the date format option passed to the document class to adjust how dates are displayed throughout the document:
+% \SubBulletItem
+% \Code{MMMyyyy} (``Jan~2008'')
+% \SubBulletItem
+% \Code{ddMMMyyyy} (``15~Jan~2008'')
+% \SubBulletItem
+% \Code{MMMMyyyy} (``January~2008'')
+% \SubBulletItem
+% \Code{ddMMMMyyyy} (``15~January~2008'')
+% \SubBulletItem
+% \Code{yyyyMMdd} (``2008-01-15'')
+% \SubBulletItem
+% \Code{yyyyMM} (``2008-01'')
+% \SubBulletItem
+% \Code{yyyy} (``2008'')
+
+% \endgroup
+
+\end{Body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+% \BigGap
+% \UseNoteFont%
+% \null\hfill%
+% [\textit{\CVNote}]
+
+\end{document}
